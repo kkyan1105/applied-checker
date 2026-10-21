@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <input id="search" type="search" placeholder="手动搜索公司名…" autocomplete="off">
+  <div id="detected" class="muted"></div>
+  <div id="verdict"></div>
+  <ul id="records"></ul>
+  <details id="maybe" hidden>
+    <summary></summary>
+    <ul id="maybe-records"></ul>
+  </details>
+  <footer>
+    <span id="sync" class="muted"></span>
+    <button id="refresh" type="button">刷新</button>
+  </footer>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

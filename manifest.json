@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Applied Checker",
+  "version": "0.1.0",
+  "description": "Check your Simplify tracker for past applications to the company on the current job posting.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Did I apply here?",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+S"
+      }
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://simplify.jobs/*",
+    "https://*.simplify.jobs/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
